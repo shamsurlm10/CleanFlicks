@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GQamtvGx0UKOcfCvPcV5RneQATTg00MPJ7RZrKtAuGUoZZf1GAeQW6jg8/7QL27akEzqQqfKgLigW/Yif7UtxA==",
+  "dgSpecHash": "0MWD/A7MhhZjvtBNp43p0pyEo1K4L8gGn/atLFPdHQDcC6ndAvKA5i39g7cN8V1mJmTdP25f2LcKqNjpjowAKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shamsurlm10\\source\\repos\\CleanMovie\\CleanMovie.Application\\CleanMovie.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

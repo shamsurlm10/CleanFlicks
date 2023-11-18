@@ -1,4 +1,4 @@
-﻿using ClassMovie.Domain;
+﻿using ClassMovie.Domain.DbModels;
 using Microsoft.EntityFrameworkCore;
 namespace CleanMovie.Infrastructure
 {
