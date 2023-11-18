@@ -1,5 +1,5 @@
 # CleanFlicks
-Build on layer architecture.
+Build on Clean architecture.
 .Net Core, Entity Framework
 
 package magager console
