@@ -1,0 +1,11 @@
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\bin\Debug\net6.0\ClassMovie.Domain.deps.json
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\bin\Debug\net6.0\ClassMovie.Domain.dll
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\bin\Debug\net6.0\ClassMovie.Domain.pdb
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ClassMovie.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ClassMovie.Domain.AssemblyInfoInputs.cache
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ClassMovie.Domain.AssemblyInfo.cs
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ClassMovie.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ClassMovie.Domain.dll
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\refint\ClassMovie.Domain.dll
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ClassMovie.Domain.pdb
+C:\Users\Shamsurlm10\source\repos\CleanMovie\ClassMovie.Domain\obj\Debug\net6.0\ref\ClassMovie.Domain.dll
