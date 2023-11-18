@@ -1,4 +1,4 @@
-﻿namespace ClassMovie.Domain
+﻿namespace ClassMovie.Domain.DbModels
 {
     public class Rental
     {
@@ -11,6 +11,6 @@
         public ICollection<Member> Members { get; set; }
 
         //Many to Many Relationship
-        public List<MovieRental> MovieRentals { get; set;}
+        public List<MovieRental> MovieRentals { get; set; }
     }
 }

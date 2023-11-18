@@ -11,6 +11,7 @@ namespace CleanMovie.Infrastructure
             services.AddDbContext<MovieDbContext>(options => options.UseSqlServer(config.GetConnectionString("DefaultConnection")
                 , b => b.MigrationsAssembly(typeof(MovieDbContext).Assembly.FullName)), ServiceLifetime.Transient);
             return services;
+
         }
     }
 }

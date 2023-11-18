@@ -91,3 +91,5 @@ C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.API\bin\Debug\net6.0\Sys
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.API\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
