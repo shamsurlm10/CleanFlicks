@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CleanMovie.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitializeMigration : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -66,12 +66,14 @@ namespace CleanMovie.Infrastructure.Migrations
                 name: "MovieRentals",
                 columns: table => new
                 {
+                    MovieRentalId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     RentalId = table.Column<int>(type: "int", nullable: false),
                     MovieId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MovieRentals", x => new { x.RentalId, x.MovieId });
+                    table.PrimaryKey("PK_MovieRentals", x => x.MovieRentalId);
                     table.ForeignKey(
                         name: "FK_MovieRentals_Movies_MovieId",
                         column: x => x.MovieId,
@@ -95,6 +97,11 @@ namespace CleanMovie.Infrastructure.Migrations
                 name: "IX_MovieRentals_MovieId",
                 table: "MovieRentals",
                 column: "MovieId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MovieRentals_RentalId",
+                table: "MovieRentals",
+                column: "RentalId");
         }
 
         /// <inheritdoc />

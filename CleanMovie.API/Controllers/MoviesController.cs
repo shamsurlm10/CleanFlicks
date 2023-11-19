@@ -2,7 +2,6 @@
 using ClassMovie.Domain.DbModels;
 using ClassMovie.Domain.Dtos;
 using CleanMovie.Application.Interfaces;
-using CleanMovie.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanMovie.API.Controllers
@@ -27,10 +26,10 @@ namespace CleanMovie.API.Controllers
             return Ok(newMovie);
         }
         [HttpGet]
-        public async Task<ActionResult<List<Movie>>> GetMovies()
+        public async Task<ActionResult<List<MovieListDto>>> GetMovies()
         {
-            var movies = await _movieService.GetALlAsync();
-            var mapper = _mapper.Map<Movie>(movies);
+            var movie = await _movieService.GetALlAsync();
+            var mapper = _mapper.Map<MovieListDto>(movie);
             return Ok(mapper);
         }
 

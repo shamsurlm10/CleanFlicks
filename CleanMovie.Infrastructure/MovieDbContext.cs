@@ -10,16 +10,10 @@ namespace CleanMovie.Infrastructure
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // One to Many(Member and Rental)
-            modelBuilder.Entity<Member>()
-                .HasOne(s => s.Rental)
-                .WithMany(r => r.Members)
-                .HasForeignKey(s => s.RentalId);
-
-            // Many to Many (Rental and Movie)
-            modelBuilder.Entity<MovieRental>()
-                .HasKey(g => new { g.RentalId, g.MovieId });
-
+            modelBuilder.Entity<Movie>().HasKey(pk => pk.MovieId);
+            modelBuilder.Entity<Member>().HasKey(pk => pk.MemberId);
+            modelBuilder.Entity<Rental>().HasKey(pk => pk.RentalId);
+            modelBuilder.Entity<MovieRental>().HasKey(pk => pk.MovieRentalId);
             // Handle Decimals to avoid precision loss
             modelBuilder.Entity<Rental>()
                 .Property(p => p.TotalCost)

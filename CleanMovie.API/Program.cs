@@ -1,6 +1,7 @@
 using CleanMovie.Application.Interfaces;
 using CleanMovie.Application.Repositories;
 using CleanMovie.Application.Services;
+using CleanMovie.Application.Services.Base;
 using CleanMovie.Infrastructure;
 using CleanMovie.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,9 @@ builder.Services.AddScoped<IMemberRepository, MemeberRepository>();
 
 builder.Services.AddScoped<IRentalService, RentalService>();
 builder.Services.AddScoped<IRentalRepository, RentalRepository>();
+
+builder.Services.AddScoped<IMovieRentalService, MovieRentalService>();
+builder.Services.AddScoped<IMovieRentalRepository, MovieRentalRepository>();
 
 builder.Services.AddScoped<DbContext, MovieDbContext>();
 var app = builder.Build();

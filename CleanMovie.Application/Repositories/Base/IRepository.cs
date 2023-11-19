@@ -10,5 +10,6 @@ namespace CleanMovie.Application.Repositories.Base
     {
         Task<IReadOnlyList<T>> GetALlAsync();
         Task<bool> AddAsync(T Entity);
+        Task<T> FindByIdAsync(int id);
     }
 }
