@@ -22,7 +22,7 @@ namespace CleanMovie.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ClassMovie.Domain.Member", b =>
+            modelBuilder.Entity("ClassMovie.Domain.DbModels.Member", b =>
                 {
                     b.Property<int>("MemberId")
                         .ValueGeneratedOnAdd()
@@ -48,7 +48,7 @@ namespace CleanMovie.Infrastructure.Migrations
                     b.ToTable("Members");
                 });
 
-            modelBuilder.Entity("ClassMovie.Domain.Movie", b =>
+            modelBuilder.Entity("ClassMovie.Domain.DbModels.Movie", b =>
                 {
                     b.Property<int>("MovieId")
                         .ValueGeneratedOnAdd()
@@ -71,22 +71,30 @@ namespace CleanMovie.Infrastructure.Migrations
                     b.ToTable("Movies");
                 });
 
-            modelBuilder.Entity("ClassMovie.Domain.MovieRental", b =>
+            modelBuilder.Entity("ClassMovie.Domain.DbModels.MovieRental", b =>
                 {
-                    b.Property<int>("RentalId")
+                    b.Property<int>("MovieRentalId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovieRentalId"));
 
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.HasKey("RentalId", "MovieId");
+                    b.Property<int>("RentalId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MovieRentalId");
 
                     b.HasIndex("MovieId");
+
+                    b.HasIndex("RentalId");
 
                     b.ToTable("MovieRentals");
                 });
 
-            modelBuilder.Entity("ClassMovie.Domain.Rental", b =>
+            modelBuilder.Entity("ClassMovie.Domain.DbModels.Rental", b =>
                 {
                     b.Property<int>("RentalId")
                         .ValueGeneratedOnAdd()
@@ -108,10 +116,10 @@ namespace CleanMovie.Infrastructure.Migrations
                     b.ToTable("Rentals");
                 });
 
-            modelBuilder.Entity("ClassMovie.Domain.Member", b =>
+            modelBuilder.Entity("ClassMovie.Domain.DbModels.Member", b =>
                 {
-                    b.HasOne("ClassMovie.Domain.Rental", "Rental")
-                        .WithMany("Members")
+                    b.HasOne("ClassMovie.Domain.DbModels.Rental", "Rental")
+                        .WithMany()
                         .HasForeignKey("RentalId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -119,31 +127,23 @@ namespace CleanMovie.Infrastructure.Migrations
                     b.Navigation("Rental");
                 });
 
-            modelBuilder.Entity("ClassMovie.Domain.MovieRental", b =>
+            modelBuilder.Entity("ClassMovie.Domain.DbModels.MovieRental", b =>
                 {
-                    b.HasOne("ClassMovie.Domain.Movie", null)
-                        .WithMany("MovieRentals")
+                    b.HasOne("ClassMovie.Domain.DbModels.Movie", "Movie")
+                        .WithMany()
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ClassMovie.Domain.Rental", null)
-                        .WithMany("MovieRentals")
+                    b.HasOne("ClassMovie.Domain.DbModels.Rental", "Rental")
+                        .WithMany()
                         .HasForeignKey("RentalId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("ClassMovie.Domain.Movie", b =>
-                {
-                    b.Navigation("MovieRentals");
-                });
+                    b.Navigation("Movie");
 
-            modelBuilder.Entity("ClassMovie.Domain.Rental", b =>
-                {
-                    b.Navigation("Members");
-
-                    b.Navigation("MovieRentals");
+                    b.Navigation("Rental");
                 });
 #pragma warning restore 612, 618
         }

@@ -18,7 +18,12 @@ namespace CleanMovie.Infrastructure.Repositories.Base
             return await _db.SaveChangesAsync()>0;
         }
 
-        public async Task<IReadOnlyList<T>> GetALlAsync()
+        public virtual async Task<T> FindByIdAsync(int Id)
+        {
+            return await _db.Set<T>().FindAsync(Id);
+        }
+
+        public virtual async Task<IReadOnlyList<T>> GetALlAsync()
         {
             return await _db.Set<T>().AsNoTracking().ToListAsync();
         }

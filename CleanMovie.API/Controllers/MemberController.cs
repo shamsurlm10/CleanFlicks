@@ -26,11 +26,10 @@ namespace CleanMovie.API.Controllers
             return Ok(newMember);
         }
         [HttpGet]
-        public async Task<ActionResult<List<Member>>> GetMembers()
+        public MovieListsDto GetMemberById([FromQuery] int memberId)
         {
-            var members = await _memberService.GetALlAsync();
-            var mapper = _mapper.Map<Member>(members);
-            return Ok(mapper);
+            var members = _memberService.GetMovieListByMember(memberId);
+            return members;
         }
 
     }

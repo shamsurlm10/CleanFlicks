@@ -11,6 +11,7 @@ namespace CleanMovie.Application
             CreateMap<MovieDto, Movie>();
             CreateMap<MemberDto, Member>();
             CreateMap<RentalDto, Rental>();
+            CreateMap<MovieRentalDto, MovieRental>();
         }
     }
 }

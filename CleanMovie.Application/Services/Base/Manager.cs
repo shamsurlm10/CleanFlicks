@@ -1,4 +1,5 @@
 ﻿using CleanMovie.Application.Interfaces.Base;
+using CleanMovie.Application.Repositories;
 using CleanMovie.Application.Repositories.Base;
 
 namespace CleanMovie.Application.Services.Base
@@ -11,9 +12,15 @@ namespace CleanMovie.Application.Services.Base
         {
             _repo = repo;
         }
+
         public async Task<bool> AddAsync(T entity)
         {
             return await _repo.AddAsync(entity);
+        }
+
+        public async Task<T> FindByIdAsync(int id)
+        {
+            return await _repo.FindByIdAsync(id);
         }
 
         public async Task<IReadOnlyList<T>> GetALlAsync()
