@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "0MWD/A7MhhZjvtBNp43p0pyEo1K4L8gGn/atLFPdHQDcC6ndAvKA5i39g7cN8V1mJmTdP25f2LcKqNjpjowAKQ==",
+  "dgSpecHash": "H92KPdtbBDSwqjs2vasds6x+z9cMyWIVi3kM8jBdEoYRQX9HcNTf/vD6Pjv/4w3M/T7wcT1Slu7kDp3R4tBIYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shamsurlm10\\source\\repos\\CleanMovie\\CleanMovie.Application\\CleanMovie.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shamsurlm10\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }

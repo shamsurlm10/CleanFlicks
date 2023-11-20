@@ -2,8 +2,6 @@
 using ClassMovie.Domain.Dtos;
 using CleanMovie.Application.Repositories;
 using CleanMovie.Infrastructure.Repositories.Base;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 
 namespace CleanMovie.Infrastructure.Repositories
 {
@@ -18,21 +16,28 @@ namespace CleanMovie.Infrastructure.Repositories
 
         public MovieListsDto GetMovieListByMember(int memberId)
         {
-            List<MovieListsDto> list=new List<MovieListsDto>();
-            var member=(from m in _db.Members where m.MemberId == memberId select new MovieListsDto { Name=m.Name,Email=m.Email }).SingleOrDefault();
-
+            var member= (from m in _db.Members
+                         where m.MemberId == memberId
+                         select new MovieListsDto
+                         {
+                             MemberId = m.MemberId,
+                             Name = m.Name,
+                             Email = m.Email
+                         }).SingleOrDefault();
             member.Movies = (from m in _db.Members
-                        join r in _db.Rentals on m.RentalId equals r.RentalId into rentalGroup
-                        from rental in rentalGroup.DefaultIfEmpty()
-                        join mr in _db.MovieRentals on rental.RentalId equals mr.RentalId into movieRentalGroup
-                        from movieRental in movieRentalGroup.DefaultIfEmpty()
-                        join mo in _db.Movies on movieRental.MovieId equals mo.MovieId into movieGroup
-                        from movie in movieGroup.DefaultIfEmpty()
-                        select new MovieDto
-                        {
-                             
-                            MovieName = movie != null ? movie.MovieName : null
-                        }).ToList();
+                             join r in _db.Rentals on m.RentalId equals r.RentalId into rentalGroup
+                             from rental in rentalGroup.DefaultIfEmpty()
+                             join mr in _db.MovieRentals on rental.RentalId equals mr.RentalId into movieRentalGroup
+                             from movieRental in movieRentalGroup.DefaultIfEmpty()
+                             join mo in _db.Movies on movieRental.MovieId equals mo.MovieId into movieGroup
+                             from movie in movieGroup.DefaultIfEmpty()
+                             where m.MemberId == memberId
+                             select new MovieDto
+                             {
+                                 MovieName = movie != null ? movie.MovieName : null,
+                                 RentalCost = movie != null ? (decimal)movie.RentalCost : 0m,
+                                 RentalDuration = movie != null ? (int)movie.RentalDuration : 0,
+                             }).ToList();
 
 
 
