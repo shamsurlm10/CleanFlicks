@@ -1,29 +1,28 @@
 ﻿using AutoMapper;
 using ClassMovie.Domain.DbModels;
 using ClassMovie.Domain.Dtos;
+using CleanMovie.API.Controllers.Base;
 using CleanMovie.Application.Interfaces;
+using CleanMovie.Application.Services;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanMovie.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MemberController : ControllerBase
+    public class MemberController : BaseApiController
     {
         private readonly IMemberService _memberService;
-        private readonly IMapper _mapper;
 
-        public MemberController(IMemberService memberService, IMapper mapper)
+        public MemberController(IMemberService memberService)
         {
             _memberService = memberService;
-            _mapper = mapper;
         }
         [HttpPost]
-        public async Task<ActionResult> CreateMember([FromBody]MemberDto member)
+        public async Task<ActionResult> CreateMember([FromBody]CreateMemberCommand member)
         {
-            var mapper = _mapper.Map<Member>(member);
-            var newMember = await _memberService.AddAsync(mapper);
-            return Ok(newMember);
+            return Ok(await Mediator.Send(member));
         }
         [HttpGet]
         public MovieListsDto GetMemberById([FromQuery] int memberId)

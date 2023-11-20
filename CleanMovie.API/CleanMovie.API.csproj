@@ -21,4 +21,10 @@
     <ProjectReference Include="..\CleanMovie.Infrastructure\CleanMovie.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="AbxERP.Infrastructure">
+      <HintPath>..\Packages\AbxERP.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

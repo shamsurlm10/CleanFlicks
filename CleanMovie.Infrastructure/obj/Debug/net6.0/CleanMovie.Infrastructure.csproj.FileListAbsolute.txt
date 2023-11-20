@@ -1,8 +1,10 @@
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Infrastructure.deps.json
+C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Infrastructure.runtimeconfig.json
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Infrastructure.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Infrastructure.pdb
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\ClassMovie.Domain.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Application.dll
+C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\AbxERP.Infrastructure.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Application.pdb
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\ClassMovie.Domain.pdb
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\CleanMovie.Infrastructure.csproj.AssemblyReference.cache
@@ -14,6 +16,5 @@ C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\CleanMovie.Infrastructure.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\refint\CleanMovie.Infrastructure.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\CleanMovie.Infrastructure.pdb
-C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\ref\CleanMovie.Infrastructure.dll
-C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\bin\Debug\net6.0\CleanMovie.Infrastructure.runtimeconfig.json
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\CleanMovie.Infrastructure.genruntimeconfig.cache
+C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Infrastructure\obj\Debug\net6.0\ref\CleanMovie.Infrastructure.dll

@@ -1,6 +1,7 @@
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\bin\Debug\net6.0\CleanMovie.Application.deps.json
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\bin\Debug\net6.0\CleanMovie.Application.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\bin\Debug\net6.0\CleanMovie.Application.pdb
+C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\bin\Debug\net6.0\AbxERP.Infrastructure.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\bin\Debug\net6.0\ClassMovie.Domain.dll
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\bin\Debug\net6.0\ClassMovie.Domain.pdb
 C:\Users\Shamsurlm10\source\repos\CleanMovie\CleanMovie.Application\obj\Debug\net6.0\CleanMovie.Application.csproj.AssemblyReference.cache
