@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yu8WiPRwLLScjUtg+HRjnNzDa8ztjCFjtJZLWQrb7B2+/UQqfMX6WvSmpiWQjQZiQ9DB2Q+RKQc3dJUSbsNVlA==",
+  "dgSpecHash": "vauWMkKPMUccIjscEabtM7lGLwRTISR+81cLvpoqdNp462rAKyffOYCWU1XjylkBrvxX0rk8aXgNevVy24pIKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shamsurlm10\\source\\repos\\CleanMovie\\CleanMovie.Application\\CleanMovie.Application.csproj",
   "expectedPackageFiles": [
@@ -8,10 +8,7 @@
     "C:\\Users\\Shamsurlm10\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Shamsurlm10\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
+    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
