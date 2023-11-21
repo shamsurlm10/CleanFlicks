@@ -1,3 +1,4 @@
+using ClassMovie.Domain.Dtos;
 using CleanMovie.Application.Interfaces;
 using CleanMovie.Application.Repositories;
 using CleanMovie.Application.Services;
@@ -5,8 +6,6 @@ using CleanMovie.Application.Services.Base;
 using CleanMovie.Infrastructure;
 using CleanMovie.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +18,10 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.
 
 builder.Services.InfrastructurePersistence(builder.Configuration);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 // Add Database Service
+builder.Services.AddTransient<IEmailService, EmailService>();
+
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 

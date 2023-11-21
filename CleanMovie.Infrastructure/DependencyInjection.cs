@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Quartz;
 
 namespace CleanMovie.Infrastructure
 {
@@ -8,6 +9,7 @@ namespace CleanMovie.Infrastructure
     {
         public static IServiceCollection InfrastructurePersistence(this IServiceCollection services, IConfiguration config)
         {
+            
             services.AddDbContext<MovieDbContext>(options => options.UseSqlServer(config.GetConnectionString("DefaultConnection")
                 , b => b.MigrationsAssembly(typeof(MovieDbContext).Assembly.FullName)), ServiceLifetime.Transient);
             return services;

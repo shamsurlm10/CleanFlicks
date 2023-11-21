@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZNiSDZkppWp1XCgbcTu80uypIzS2xjSsHS9RuvoPT5qv1pU1auC9BhO3s9UZ0mKoarQmruQEHdOU0CBMc/m4VQ==",
+  "dgSpecHash": "VVaqYly28IMHva8yhkshYmLH7m+eOiSDCoSxW+UdjASH1DK/leMQuWquRi3N2mAN7o4HtP1IAQOnhYRYxZV/2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shamsurlm10\\source\\repos\\CleanMovie\\ClassMovie.Domain\\ClassMovie.Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shamsurlm10\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
